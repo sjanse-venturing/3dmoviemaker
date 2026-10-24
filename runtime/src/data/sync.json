@@ -1,0 +1,43 @@
+{
+  "notes": "Sincronización de películas entre equipos (Windows y Linux usan los mismos valores). Las películas con sonidos importados pueden pesar varios MB: límites de 32 MB por archivo y 256 MB por paquete. Ver RUNTIME.md §16.",
+  "folderName": "CreadorPeliculas-sync",
+  "limits": {
+    "maxZipBytes": 268435456,
+    "maxEntries": 512,
+    "maxFileBytes": 33554432,
+    "maxTotalBytes": 268435456,
+    "maxRatio": 100,
+    "ratioMinBytes": 65536,
+    "maxManifestBytes": 65536,
+    "maxIniLine": 4096,
+    "futureToleranceSeconds": 86400
+  },
+  "forbiddenMagicNotes": "Comienzos de archivo prohibidos (hex). Los ejecutables MZ se detectan aparte (MZ + encabezado PE/NE/LE).",
+  "forbiddenMagic": [
+    "7F454C46",
+    "232120",
+    "23212F",
+    "504B0304",
+    "504B0506",
+    "504B0708",
+    "4D534346",
+    "52617221",
+    "377ABCAF271C",
+    "CAFEBABE",
+    "FEEDFACE",
+    "FEEDFACF",
+    "CEFAEDFE",
+    "CFFAEDFE",
+    "D0CF11E0A1B11AE1"
+  ],
+  "google": {
+    "notes": "Cliente OAuth de tipo «TVs and Limited Input devices» con el scope drive.appdata. Para este tipo de cliente Google no considera secreto el client_secret. Se puede reemplazar con las variables CP3D_GOOGLE_CLIENT_ID y CP3D_GOOGLE_CLIENT_SECRET.",
+    "clientId": "",
+    "clientSecret": "",
+    "scope": "openid email https://www.googleapis.com/auth/drive.appdata",
+    "authBase": "https://oauth2.googleapis.com",
+    "apiBase": "https://www.googleapis.com",
+    "timeoutSeconds": 15,
+    "retries": 3
+  }
+}

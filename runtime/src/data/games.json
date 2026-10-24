@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "notes": "Receta validada en Windows 10 x64 (2026-10-24). Reemplaza al instalador ACME de 16 bits (SETUP\\INSTALAR.STF/.INF). Variables: {HD}=carpeta del juego (<instalación>\\games\\<ID>), {PLAYER}=nombre del jugador, {USERDIR}=carpeta de películas del jugador.",
+  "games": [
+    {
+      "id": "3DMM",
+      "order": 1,
+      "name": "3D Creador de Películas",
+      "age": "desde 8 años",
+      "engine": "kauai",
+      "iso": {
+        "file": "MS3DMM01E01.ISO",
+        "size": 346884096,
+        "keyFile": "3DMOVIE\\3DMOVIE.EXE",
+        "label": "MS3DMM01E01"
+      },
+      "layout": [
+        {
+          "from": "3DMOVIE",
+          "to": "MSKIDS\\3D Creador de Películas"
+        },
+        {
+          "from": "PSS",
+          "to": "MSKIDS\\3D Creador de Películas",
+          "include": [
+            "3DMM.HLP",
+            "3DMM.CNT"
+          ]
+        },
+        {
+          "from": "SETUP",
+          "to": "MSKIDS\\Users\\Melanie",
+          "include": [
+            "*.3MM"
+          ]
+        },
+        {
+          "from": "EXEMPLES",
+          "to": "MSKIDS\\Users\\McZee"
+        },
+        {
+          "from": "MMCAT\\DIBS4",
+          "to": "art",
+          "include": [
+            "3DMVMAIN.DIB"
+          ]
+        }
+      ],
+      "dirs": [],
+      "exe": "MSKIDS\\3D Creador de Películas\\3DMOVIE.EXE",
+      "args": "-m",
+      "icon": "MSKIDS\\3D Creador de Películas\\3DMOVIE.EXE",
+      "registry": {
+        "file": "registro.ini",
+        "values": {
+          "HKLM": {
+            "InstallDirectory": "sz:{HD}\\MSKIDS",
+            "InstallSubDir": "sz:3D Creador de Películas",
+            "WaveOutMsg": "dw:0",
+            "MidiOutMsg": "dw:0"
+          },
+          "HKLM\\Products": {
+            "2": "sz:3D Creador de Películas/3DMovie"
+          },
+          "HKCU": {
+            "HomeDirectory": "sz:{USERDIR}\\",
+            "GreaterThan8bppMsg": "dw:0",
+            "SwitchResolution": "dw:0"
+          }
+        }
+      },
+      "saves": [
+        "*.3MM"
+      ],
+      "savesDir": "MSKIDS\\Users\\{PLAYER}",
+      "syncExclude": [],
+      "fonts": [
+        "SETUP\\COMIC.TTF",
+        "SETUP\\COMICBD.TTF"
+      ],
+      "saveMagic": [
+        "43484E32"
+      ],
+      "fileExtension": ".3mm",
+      "art": {
+        "notes": "Artwork de Steam generado desde la imagen del catálogo del CD (MMCAT). Rectángulos: x, y, ancho, alto.",
+        "source": "art\\3DMVMAIN.DIB",
+        "background": "F8F8F0",
+        "logo": {
+          "rect": [
+            1,
+            11,
+            223,
+            55
+          ],
+          "key": "F0F0E0",
+          "tolerance": 40
+        },
+        "picture": {
+          "rect": [
+            229,
+            0,
+            283,
+            382
+          ]
+        }
+      }
+    }
+  ]
+}

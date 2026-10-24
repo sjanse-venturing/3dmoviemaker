@@ -1,0 +1,22 @@
+# Imagen del disco original (material con copyright, cientos de MB)
+*.iso
+*.ISO
+
+# Volcados de bash (Git for Windows)
+*.stackdump
+
+# Registros (el runtime escribe logs\*.log)
+*.log
+
+# Python (lanzador de Linux / Steam Deck)
+__pycache__/
+*.pyc
+
+# Sistema operativo y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~

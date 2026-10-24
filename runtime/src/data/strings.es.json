@@ -1,0 +1,42 @@
+{
+  "errors": {
+    "3DM-ENV-001": { "title": "Windows no compatible", "message": "Creador de Películas 3D Runtime necesita Windows 10 u 11 de 64 bits.", "actions": [ "close" ] },
+    "3DM-ENV-002": { "title": "Falta un componente de Windows", "message": "Falta un componente de Windows ({component}). Instalalo desde Windows Update y volvé a intentar.", "actions": [ "close" ] },
+    "3DM-ENV-003": { "title": "Faltan archivos del programa", "message": "Faltan archivos de Creador de Películas 3D Runtime ({file}). Volvé a descargar o descomprimir el programa completo.", "actions": [ "close" ] },
+    "3DM-ENV-004": { "title": "Falta Proton", "message": "Para usar 3D Creador de Películas en Linux o en el Steam Deck hace falta Proton. Instalalo desde Steam (Biblioteca → Herramientas → «Proton») y volvé a intentar.", "actions": [ "close" ] },
+    "3DM-ISO-001": { "title": "No encontramos el disco", "message": "No encontramos el disco de 3D Creador de Películas en «{path}». Elegí la carpeta donde está el archivo .iso.", "actions": [ "browse" ] },
+    "3DM-ISO-002": { "title": "Disco no válido", "message": "El archivo «{file}» no parece un disco de 3D Creador de Películas válido o está dañado.", "actions": [ "skip" ] },
+    "3DM-DSK-001": { "title": "Sin espacio suficiente", "message": "No hay espacio suficiente en {drive}: se necesitan {need} y hay {free} libres.", "actions": [ "browse" ] },
+    "3DM-DSK-002": { "title": "No se puede escribir en la carpeta", "message": "No se puede escribir en «{path}». Elegí otra carpeta (por ejemplo, la sugerida).", "actions": [ "browse" ] },
+    "3DM-DSK-003": { "title": "Carpeta no compatible", "message": "El programa es de 1996 y no entiende algunos caracteres de esa ruta («{chars}»). Elegí una carpeta sin esos caracteres, por ejemplo C:\\CreadorPeliculas.", "actions": [ "browse" ] },
+    "3DM-DSK-004": { "title": "Ruta demasiado larga", "message": "La carpeta elegida tiene una ruta demasiado larga: los vídeos del programa no se abren con rutas largas (máximo {max} caracteres). Elegí una carpeta más corta, por ejemplo C:\\CreadorPeliculas.", "actions": [ "browse" ] },
+    "3DM-CPY-001": { "title": "Error al copiar", "message": "Hubo un problema copiando «{game}» (archivo {file}). La imagen de disco puede estar dañada o el disco lleno.", "actions": [ "retry", "skip", "details" ] },
+    "3DM-CPY-002": { "title": "Archivo bloqueado", "message": "Windows o el antivirus bloquearon un archivo del programa ({file}). Algunos antivirus desconfían de los programas antiguos.", "actions": [ "retry", "details" ] },
+    "3DM-CFG-001": { "title": "No se pudo guardar la configuración", "message": "No pudimos guardar la configuración de «{game}».", "actions": [ "retry", "details" ] },
+    "3DM-CFG-002": { "title": "Nombre no válido", "message": "«{name}» no sirve como nombre de jugador: usá hasta 24 letras, números o espacios, sin símbolos como \\ / : * ? \" < > |.", "actions": [ "close" ] },
+    "3DM-RUN-001": { "title": "El programa ya está abierto", "message": "3D Creador de Películas ya está abierto. Cerralo antes de volver a abrirlo o de cambiar tus películas.", "actions": [ "close" ] },
+    "3DM-RUN-003": { "title": "El programa se cerró", "message": "«{game}» se cerró al iniciar. Probá con «Reparar» o revisá los detalles.", "actions": [ "repair", "details" ] },
+    "3DM-RUN-004": { "title": "El programa tuvo un error", "message": "«{game}» tuvo un error interno y se cerró (código {code}).", "actions": [ "details" ] },
+    "3DM-RUN-005": { "title": "No se pudo iniciar", "message": "No se pudo iniciar «{game}». Es posible que un antivirus esté bloqueando la capa de compatibilidad.", "actions": [ "details" ] },
+    "3DM-RUN-006": { "title": "Programa no instalado", "message": "«{game}» no está instalado o su instalación está incompleta. Usá «Reparar» o volvé a instalarlo.", "actions": [ "repair" ] },
+    "3DM-SAV-001": { "title": "No es una copia de películas", "message": "El archivo «{file}» no contiene películas de 3D Creador de Películas. Elegí un .zip creado con «Copia de seguridad de las películas».", "actions": [ "close" ] },
+    "3DM-SAV-002": { "title": "No se pudieron importar las películas", "message": "No pudimos importar las películas de «{file}». Las películas que tenías quedaron guardadas en «Creador de Películas 3D - copias».", "actions": [ "retry", "details" ] },
+    "3DM-SYN-001": { "title": "Sin conexión a Internet", "message": "No pudimos conectarnos con Google Drive para sincronizar «{game}». Revisá que el equipo tenga Internet. Causa: {detail}", "actions": [ "retry", "details" ] },
+    "3DM-SYN-002": { "title": "No se puede usar la carpeta de sincronización", "message": "No pudimos {op} las películas de «{game}» en la carpeta «{path}». Revisá que la carpeta exista, que tengas permiso y que el disco (o pendrive) esté conectado. Causa: {detail}", "actions": [ "retry", "details" ] },
+    "3DM-SYN-003": { "title": "Hay que volver a vincular Google Drive", "message": "Google rechazó el acceso de Creador de Películas 3D a tu Drive (se venció o se revocó el permiso). Abrí «Sincronización…» y volvé a vincular la cuenta. Causa: {detail}", "actions": [ "relink", "details" ] },
+    "3DM-SYN-004": { "title": "Tu Google Drive está lleno", "message": "No hay espacio en tu Google Drive para guardar las películas de «{game}». Liberá espacio y volvé a intentar.", "actions": [ "retry", "details" ] },
+    "3DM-SYN-005": { "title": "Películas rechazadas por seguridad", "message": "Las películas de «{game}» que están en la sincronización no pasaron los controles de seguridad y no se usaron. Tus películas de este equipo no se tocaron. Motivo: {reason}", "actions": [ "details" ] },
+    "3DM-SYN-006": { "title": "Google Drive no respondió bien", "message": "Google Drive devolvió un error al sincronizar «{game}». Suele ser pasajero: probá de nuevo en unos minutos. Causa: {detail}", "actions": [ "retry", "details" ] },
+    "3DM-SYN-007": { "title": "No se pudieron aplicar las películas descargadas", "message": "Descargamos las películas más recientes de «{game}» pero no pudimos copiarlas a este equipo. Tus películas anteriores quedaron en «Creador de Películas 3D - copias». Causa: {detail}", "actions": [ "retry", "details" ] },
+    "3DM-SYN-008": { "title": "Google Drive no está configurado", "message": "Esta copia del programa no tiene configurado el acceso a Google Drive. Usá el modo «Carpeta sincronizada» (por ejemplo, con Google Drive para escritorio) o pedile a quien armó el programa que lo configure.", "actions": [ "close" ] },
+    "3DM-STM-001": { "title": "No encontramos Steam", "message": "No encontramos Steam en este equipo, o todavía no iniciaste sesión. Instalalo, iniciá sesión una vez y volvé a intentar.", "actions": [ "close" ] },
+    "3DM-STM-002": { "title": "Steam no se cerró", "message": "Para agregar el programa hay que cerrar Steam, y no se cerró a tiempo. Cerralo a mano (menú Steam → Salir) y volvé a intentar.", "actions": [ "retry", "details" ] },
+    "3DM-STM-003": { "title": "No se pudo agregar a Steam", "message": "No pudimos escribir la lista de juegos de Steam ({file}). La lista anterior quedó intacta. Causa: {detail}", "actions": [ "retry", "details" ] },
+    "3DM-GEN-001": { "title": "Ocurrió un error inesperado", "message": "Ocurrió un error inesperado. No es tu culpa: copiá el informe y envialo a quien te ayude con la computadora.", "actions": [ "copy", "details" ] }
+  },
+  "actions": {
+    "close": "Cerrar", "browse": "Elegir otra carpeta…", "skip": "Saltar", "retry": "Reintentar", "details": "Ver detalles",
+    "locate": "Buscar el archivo…", "repair": "Reparar", "copy": "Copiar informe",
+    "playlocal": "Jugar igual", "relink": "Volver a vincular…"
+  }
+}
